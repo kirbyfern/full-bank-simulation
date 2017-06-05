@@ -1,0 +1,16 @@
+First Bank of ECC
+Smith, Henry
+456 Torrance Blvd.
+Torrance
+CA
+3400.80
+Holiday, John
+675 Third St.
+Los Angeles
+CA
+5678.50
+Wilson, Nancy
+7896 Crenshaw Blvd.
+Long Beach
+CA
+4570.75
