@@ -120,7 +120,7 @@ void readInfo(fstream &fin, Bank &BankInfo, Customer Info[])
 }
 
 // validates the input file name
-void validateFileName(fstream &fin,Bank &BankInfo, Customer Info[])
+void validateFileName(fstream &fin, Bank &BankInfo, Customer Info[])
 {
     int counter = 0;
 
@@ -164,7 +164,7 @@ int countCustomer(Customer Info[])
     return count;
 }
 
-// creates a system pause every after a function that has been done
+// a system pause every after a function that has been done
 void pauseCls()
 {
     cout << endl << endl;
@@ -198,7 +198,7 @@ void addCustomer(Customer Info[], Bank &BankInfo)
 
 }
 
-// remove a specif custotomer from the file name
+// remove a specific customer from the file name
 void removeCustomer(Customer Info[], Bank &BankInfo)
 {
     string acctName;
@@ -284,7 +284,7 @@ void withdraw(Customer Info[], Bank &BankInfo)
         double withdrawAmount = 0;
         cout << "Account Name: \t" << Info[acctId].fullName << endl;
         cout << setprecision(2) << fixed;
-        cout << "Available Balance: \t" << "$" <<Info[acctId].balance << endl;
+        cout << "Available Balance: \t" << "$" << Info[acctId].balance << endl;
         cout << "Withdraw Amount: ";
         cin >> withdrawAmount;
         if (withdrawAmount > Info[acctId].balance)
