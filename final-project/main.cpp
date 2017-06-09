@@ -103,7 +103,7 @@ int main()
 // check file if it is empty
 bool checkEmptyFile(fstream &fin)
 {
-    return fin.peek() == std::ifstream::traits_type::eof();
+    return fin.peek() == EOF;
 }
 
 // prompts user for the file name
@@ -148,7 +148,7 @@ void validateFileName(fstream &fin, Bank &BankInfo, Customer Info[], string iFil
     if (fin && !checkEmptyFile(fin)) {
         readInfo(fin, BankInfo, Info);
     }
-    else if (checkEmptyFile(fin)) {
+    else if (fin && checkEmptyFile(fin)) {
         cout << "File is empty!";
 
         exit(0);
